@@ -1,3 +1,12 @@
+## STAR — Completed Project
+
+Live website: https://mishkhurshid.github.io/is-117-brand-studio/index.html
+
+Merged BRAND-001 pull request: https://github.com/mishkhurshid/is-117-brand-studio/pull/2
+
+Status: STAR storefront and style guide completed, merged, and published.
+
+
 # IS117 Brand Studio
 
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
