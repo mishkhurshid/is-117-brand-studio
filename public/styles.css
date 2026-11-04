@@ -1,18 +1,16 @@
 /* Shared brand tokens. Change these after you agree on your brand direction.
    Both the storefront and the live style guide use this file. */
 :root {
-  --color-paper: #f6f5f0;
-  --color-ink: #171a18;
-  --color-muted: #5a615b;
-  --color-line: #d1d5cc;
-  --color-accent: #e3ef56;
-  --color-soft: #e8eae1;
+  --color-paper: #fff;
+  --color-ink: #1b1d1f;
+  --color-muted: #51575b;
+  --color-line: #d8dcde;
+  --color-accent: #e5e7e8;
+  --color-soft: #f0f2f2;
   --color-white: #fff;
-  --color-danger: #992e28;
-  --font-body:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
-  --font-display:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+  --color-danger: #8d2929;
+  --font-body: "Avenir Next", "Helvetica Neue", sans-serif;
+  --font-display: "Avenir Next", "Helvetica Neue", sans-serif;
   --font-mono: ui-monospace, sfmono-regular, consolas, monospace;
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -209,7 +207,7 @@ p + p {
 }
 
 .wordmark {
-  width: 150px;
+  width: 155px;
   height: auto;
 }
 
@@ -252,6 +250,65 @@ p + p {
   border: 1px solid var(--color-ink);
   border-radius: 50%;
   font-size: 0.7rem;
+}
+
+.brand-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: center;
+  gap: 3rem;
+  padding-block: 4rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.brand-hero-copy {
+  max-width: 640px;
+  padding-block: 1rem;
+}
+
+.brand-hero h1 {
+  max-width: 15ch;
+  margin-top: 1.2rem;
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.brand-hero .hero-summary {
+  max-width: 48ch;
+  margin-top: 1.2rem;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.brand-hero-visual {
+  min-width: 0;
+  min-height: 390px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  margin: 0;
+  padding: 2rem;
+  background: var(--color-soft);
+}
+
+.brand-hero-shirt {
+  width: 100%;
+  max-height: 390px;
+  aspect-ratio: 800 / 880;
+  object-fit: contain;
+}
+
+.brand-hero-visual figcaption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
 }
 
 .product-section {
@@ -305,15 +362,19 @@ p + p {
   padding-block: 1rem;
 }
 
-.product-information h1 {
+.product-information h2 {
   margin-top: 1.6rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0;
 }
 
 .product-intro {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-top: 1.8rem;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 .product-description {
@@ -403,6 +464,17 @@ legend {
     border-color 150ms ease;
 }
 
+.styling-section .style-preference-option span {
+  display: grid;
+  place-items: center;
+  min-width: 6rem;
+  min-height: 2.8rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--color-line);
+  background: var(--color-paper);
+  font-size: 0.78rem;
+}
+
 .size-option input:checked + span {
   background: var(--color-ink);
   border-color: var(--color-ink);
@@ -419,6 +491,30 @@ legend {
 }
 
 .size-option input:focus-visible {
+  outline: none;
+}
+
+.styling-section .style-preference-option input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.styling-section .style-preference-option input:checked + span {
+  border-color: var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-white);
+}
+
+.styling-section .style-preference-option input:focus-visible + span {
+  outline: 3px solid var(--color-ink);
+  outline-offset: 4px;
+}
+
+.styling-section .style-preference-option input:focus-visible {
   outline: none;
 }
 
@@ -470,6 +566,10 @@ legend {
   background: var(--color-soft);
 }
 
+.brand-hero .button {
+  margin-top: 1.5rem;
+}
+
 .add-button {
   width: 100%;
   margin-top: 1.4rem;
@@ -517,7 +617,8 @@ legend {
 
 .bag-section h2 {
   margin-top: 0.6rem;
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: 2.5rem;
+  letter-spacing: 0;
 }
 
 .bag-details {
@@ -562,6 +663,79 @@ legend {
 .bag-details .field-help {
   margin-top: 0.4rem;
   font-size: 0.69rem;
+}
+
+.styling-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: 3rem;
+  padding-block: 3rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.styling-intro h2 {
+  margin-top: 0.6rem;
+  font-size: 2.5rem;
+  letter-spacing: 0;
+}
+
+.styling-intro-text {
+  max-width: 34ch;
+  margin-top: 0.8rem;
+  color: var(--color-muted);
+  font-size: 0.84rem;
+}
+
+.styling-content {
+  min-width: 0;
+}
+
+.styling-ideas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.styling-idea {
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.styling-idea h3 {
+  margin-top: 0.45rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.styling-idea-copy {
+  margin-top: 0.4rem;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+}
+
+.style-preference-form {
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.style-preference-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.style-preference-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.style-preference-result {
+  min-height: 1.7rem;
+  margin-top: 0.9rem;
+  font-size: 0.84rem;
 }
 
 .starter-next {
@@ -624,7 +798,8 @@ legend {
 }
 
 .page-hero h1 {
-  font-size: clamp(3.5rem, 6.8vw, 7.3rem);
+  font-size: 4.2rem;
+  letter-spacing: 0;
 }
 
 .page-hero .hero-summary {
@@ -672,7 +847,8 @@ legend {
 }
 
 .section-heading h2 {
-  font-size: clamp(1.7rem, 2.5vw, 2.65rem);
+  font-size: 2rem;
+  letter-spacing: 0;
 }
 
 .section-heading p {
@@ -769,7 +945,6 @@ legend {
 
 .logo-mono {
   width: 190px;
-  filter: brightness(0);
 }
 
 .logo-variant p,
@@ -836,10 +1011,10 @@ legend {
 
 .type-display {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 4.5vw, 5rem);
+  font-size: 3rem;
   font-weight: 550;
-  letter-spacing: -0.075em;
-  line-height: 1;
+  letter-spacing: 0;
+  line-height: 1.08;
   max-width: 700px;
 }
 
@@ -915,7 +1090,7 @@ legend {
 .voice-example {
   font-size: 1.7rem !important;
   color: var(--color-ink) !important;
-  letter-spacing: -0.035em;
+  letter-spacing: 0;
   line-height: 1.3;
 }
 
@@ -967,8 +1142,24 @@ legend {
     align-items: start;
   }
 
-  .product-information h1 {
-    font-size: clamp(3.4rem, 7vw, 5rem);
+  .brand-hero {
+    gap: 2rem;
+  }
+
+  .brand-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .brand-hero-visual {
+    min-height: 320px;
+  }
+
+  .brand-hero-shirt {
+    max-height: 320px;
+  }
+
+  .product-information h2 {
+    font-size: 2.6rem;
   }
 
   .product-information {
@@ -1073,8 +1264,27 @@ legend {
     padding: 0;
   }
 
-  .product-information h1 {
-    font-size: clamp(4.2rem, 13vw, 7rem);
+  .brand-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    padding-block: 2.5rem;
+  }
+
+  .brand-hero h1 {
+    max-width: 13ch;
+    font-size: 3rem;
+  }
+
+  .brand-hero-visual {
+    min-height: 320px;
+  }
+
+  .brand-hero-shirt {
+    max-height: 320px;
+  }
+
+  .product-information h2 {
+    font-size: 2.6rem;
     margin-top: 1rem;
   }
 
@@ -1099,6 +1309,12 @@ legend {
 
   .bag-section h2 {
     margin-top: 0.6rem;
+  }
+
+  .styling-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    padding-block: 2rem;
   }
 
   .starter-next {
@@ -1219,6 +1435,19 @@ legend {
     padding: 1rem;
   }
 
+  .brand-hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .brand-hero-visual {
+    min-height: 270px;
+    padding: 1.5rem;
+  }
+
+  .brand-hero-shirt {
+    max-height: 270px;
+  }
+
   .price-row .micro-label {
     font-size: 0.54rem;
   }
@@ -1280,6 +1509,28 @@ legend {
   .voice-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .styling-ideas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .styling-idea {
+    display: grid;
+    grid-template-columns: minmax(5rem, 0.45fr) minmax(0, 1fr);
+    gap: 0.25rem 0.8rem;
+  }
+
+  .styling-idea .micro-label {
+    grid-row: span 2;
+    align-self: start;
+    font-size: 0.58rem;
+  }
+
+  .styling-idea h3,
+  .styling-idea > p:last-child {
+    margin-top: 0;
   }
 }
 
