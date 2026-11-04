@@ -1,6 +1,23 @@
 "use strict";
 
 (() => {
+  const stylePreferenceForm = document.querySelector("#style-preference-form");
+  const stylePreferenceResult = document.querySelector(
+    "#style-preference-result",
+  );
+  const styleSuggestions = {
+    relaxed: "Relaxed pairing: straight-leg denim and simple sneakers.",
+    layered: "Layered pairing: an open overshirt and relaxed trousers.",
+    polished: "Polished pairing: tailored trousers and a simple belt.",
+  };
+
+  stylePreferenceForm?.addEventListener("change", (event) => {
+    if (!(event.target instanceof HTMLInputElement)) return;
+    stylePreferenceResult.textContent =
+      styleSuggestions[event.target.value] ??
+      "Choose a direction to see a styling suggestion.";
+  });
+
   const form = document.querySelector("#product-form");
   if (!form) return;
 

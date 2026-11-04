@@ -5,38 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
+      content="STAR presents timeless everyday essentials with simple, elegant styling."
     />
-    <title>Your Brand — neutral storefront starter</title>
+    <title>STAR | Everyday essentials</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <script src="shop.js" defer></script>
   </head>
-  <body>
+  <body class="brand-storefront">
     <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
-      <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
-      >
-      <a href="studio.html"
-        >Enter the studio <span aria-hidden="true">↗</span></a
-      >
-    </aside>
     <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
+      <a class="brand-link" href="index.html" aria-label="STAR storefront home"
         ><img
           class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
+          src="assets/star-wordmark.svg"
+          alt="STAR wordmark proposal"
+          width="260"
+          height="48"
       /></a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html" aria-current="page">Shop</a>
+        <a class="nav-link" href="#product-section" aria-current="page">Shop</a>
         <a class="nav-link" href="styleguide.html">Style guide</a>
         <a class="nav-link" href="studio.html"
           >Studio <span aria-hidden="true">↗</span></a
@@ -48,35 +36,66 @@
     </header>
 
     <main id="main">
-      <section class="product-section wrap" aria-labelledby="product-title">
+      <section class="brand-hero wrap" aria-labelledby="brand-hero-title">
+        <div class="brand-hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> STAR / Everyday
+          </p>
+          <h1 id="brand-hero-title">
+            Effortlessly Simple.<br />Always Elegant.
+          </h1>
+          <p class="hero-summary">
+            A timeless everyday essential that brings simplicity and elegance to
+            everyday outfits.
+          </p>
+          <a class="button button-primary" href="#product-section">
+            Explore the Collection <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+        <figure class="brand-hero-visual">
+          <img
+            class="brand-hero-shirt"
+            src="assets/white-shirt.svg"
+            alt="Plain white short-sleeved T-shirt"
+            width="800"
+            height="880"
+            fetchpriority="high"
+          />
+          <figcaption class="micro-label">White T-shirt / demo</figcaption>
+        </figure>
+      </section>
+
+      <section
+        id="product-section"
+        class="product-section wrap"
+        aria-labelledby="product-title"
+      >
         <div class="product-visual">
           <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
+            <span>STAR / Everyday</span><span>White T-shirt</span>
           </div>
           <img
             class="shirt-image"
             src="assets/white-shirt.svg"
-            alt="Plain white, unbranded short-sleeved T-shirt"
+            alt="Plain white short-sleeved T-shirt"
             width="800"
             height="880"
             fetchpriority="high"
           />
           <div class="image-caption">
-            <span>One product. Room for your point of view.</span
+            <span>A simple essential for everyday outfits.</span
             ><span aria-hidden="true">↙</span>
           </div>
         </div>
         <div class="product-information">
           <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
+            <span class="status-dot" aria-hidden="true"></span> STAR / Demo only
           </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
+          <h2 id="product-title">The white T-shirt.</h2>
+          <p class="product-intro">A white T-shirt for everyday outfits.</p>
           <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
+            Choose a size to see how this classroom demo works. No additional
+            product claims are supplied.
           </p>
           <div class="price-row">
             <p class="price">$28 <span>USD</span></p>
@@ -129,7 +148,7 @@
             </div>
             <div>
               <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
+              <dd>STAR</dd>
             </div>
             <div>
               <dt>Product claims</dt>
@@ -168,31 +187,88 @@
         </div>
       </section>
 
-      <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
-        <div>
-          <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
+      <section
+        id="styling-guide"
+        class="styling-section wrap"
+        aria-labelledby="styling-title"
+      >
+        <div class="styling-intro">
+          <p class="eyebrow">A complimentary styling guide</p>
+          <h2 id="styling-title">One tee.<br />Your everyday.</h2>
+          <p class="styling-intro-text">
+            Three simple outfit ideas, available without choosing a size or
+            adding anything to the demo bag.
           </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
+        </div>
+        <div class="styling-content">
+          <div class="styling-ideas">
+            <article class="styling-idea">
+              <p class="micro-label">01 / Class</p>
+              <h3>Relaxed denim</h3>
+              <p class="styling-idea-copy">
+                Try straight-leg denim and simple sneakers.
+              </p>
+            </article>
+            <article class="styling-idea">
+              <p class="micro-label">02 / Coffee</p>
+              <h3>Easy layers</h3>
+              <p class="styling-idea-copy">
+                Add an open overshirt and relaxed trousers.
+              </p>
+            </article>
+            <article class="styling-idea">
+              <p class="micro-label">03 / Going out</p>
+              <h3>Clean contrast</h3>
+              <p class="styling-idea-copy">
+                Tuck it into tailored trousers with a simple belt.
+              </p>
+            </article>
+          </div>
+          <div id="style-preference-form" class="style-preference-form">
+            <fieldset aria-describedby="style-preference-help">
+              <legend>Find a pairing for your style</legend>
+              <p id="style-preference-help" class="field-help">
+                Optional. Choose a direction to see a matching outfit idea.
+              </p>
+              <div class="style-preference-options">
+                <label class="style-preference-option">
+                  <input type="radio" name="style-preference" value="relaxed" />
+                  <span>Relaxed</span>
+                </label>
+                <label class="style-preference-option">
+                  <input type="radio" name="style-preference" value="layered" />
+                  <span>Layered</span>
+                </label>
+                <label class="style-preference-option">
+                  <input
+                    type="radio"
+                    name="style-preference"
+                    value="polished"
+                  />
+                  <span>Polished</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <p
+            id="style-preference-result"
+            class="style-preference-result"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
           >
+            Choose a direction to see a styling suggestion.
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer wrap">
       <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
+        STAR <span class="footer-separator"> / </span> Fictional product demo
       </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
-        >Project README <span aria-hidden="true">↗</span></a
-      >
+      <p class="footer-tagline">No checkout or payment.</p>
+      <a href="styleguide.html">Brand details</a>
     </footer>
   </body>
 </html>

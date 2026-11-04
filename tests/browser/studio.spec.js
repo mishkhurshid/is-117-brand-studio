@@ -36,6 +36,43 @@ test("positive: a shopper can choose sizes, add items, and empty the demo bag", 
   await expect(page.locator("#bag-count")).toHaveText("0");
 });
 
+test("positive: the hero CTA reaches the T-shirt and size selector", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const exploreCollection = page.getByRole("link", {
+    name: "Explore the Collection",
+  });
+  await expect(exploreCollection).toHaveAttribute("href", "#product-section");
+  await exploreCollection.click();
+  await expect(page.locator("#product-section")).toBeInViewport();
+  await expect(page.locator("#product-form")).toBeVisible();
+});
+
+test("reciprocity: outfit ideas are available without adding to the demo bag", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("#styling-guide")).toContainText("Relaxed denim");
+  await expect(page.locator("#styling-guide")).toContainText("Easy layers");
+  await expect(page.locator("#styling-guide")).toContainText("Clean contrast");
+  await expect(page.locator("#bag-count")).toHaveText("0");
+});
+
+test("consistency: an optional style choice returns a matching pairing", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("#style-preference-result")).toContainText(
+    "Choose a direction",
+  );
+  await page.locator('input[name="style-preference"][value="layered"]').check();
+  await expect(page.locator("#style-preference-result")).toHaveText(
+    "Layered pairing: an open overshirt and relaxed trousers.",
+  );
+  await expect(page.locator("#bag-count")).toHaveText("0");
+});
+
 test("keyboard: the skip link reaches main and the size controls work without a mouse", async ({
   page,
 }) => {

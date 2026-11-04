@@ -5,32 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="The live, neutral brand board for the IS117 T-shirt storefront. Shared tokens and assets keep design choices connected to the page."
+      content="The live STAR style guide, sharing the storefront's proposed wordmark, typography, and neutral color tokens."
     />
-    <title>Live style guide — Your Brand starter</title>
+    <title>STAR | Live style guide</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <script src="styleguide.js" defer></script>
   </head>
-  <body>
+  <body class="styleguide-page">
     <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
-      <span
-        ><strong>Neutral examples.</strong> Replace this identity after your
-        decisions; this board shares the storefront’s CSS and logo.</span
-      ><a href="studio.html">Studio brief <span aria-hidden="true">↗</span></a>
-    </aside>
     <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
+      <a class="brand-link" href="index.html" aria-label="STAR storefront home"
         ><img
           class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
+          src="assets/star-wordmark.svg"
+          alt="STAR wordmark proposal"
+          width="260"
+          height="48"
       /></a>
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html">Shop</a
@@ -40,19 +31,17 @@
           >Studio <span aria-hidden="true">↗</span></a
         >
       </nav>
-      <span class="micro-label">Live brand board</span>
+      <span class="micro-label">STAR / Live guide</span>
     </header>
     <main id="main">
       <section class="page-hero wrap" aria-labelledby="guide-title">
         <p class="eyebrow">
-          <span class="status-dot" aria-hidden="true"></span> Identity / version
-          00 / neutral starter
+          <span class="status-dot" aria-hidden="true"></span> STAR / Identity
         </p>
-        <h1 id="guide-title">A brand, kept<br />in one place.</h1>
+        <h1 id="guide-title">A clear point<br />of view.</h1>
         <p class="hero-summary">
-          A working board for the choices behind the storefront.
-          <strong>These are neutral examples, ready to replace.</strong> Decide
-          who the brand serves before making its identity your own.
+          The live design tokens, type, and components used by the STAR
+          storefront. The wordmark shown here is a proposal awaiting review.
         </p>
       </section>
       <nav class="page-subnav wrap" aria-label="Style guide sections">
@@ -76,25 +65,31 @@
           <p>Record your agreed reasoning in SPEC.md, then reflect it here.</p>
         </div>
         <div class="guide-content">
-          <span class="draft-label">Not a completed brand strategy</span>
+          <span class="draft-label"
+            >Audience hypotheses, not customer research</span
+          >
           <div class="decision-grid">
             <div>
               <h3>Audience</h3>
-              <p class="undecided">To decide</p>
+              <p class="undecided">Primary hypothesis</p>
               <p>
-                Use your personas to identify a need this page should answer.
+                College students and young adults around 18–25; class, coffee
+                shops, and casual outings.
               </p>
             </div>
             <div>
               <h3>Archetype</h3>
-              <p class="undecided">To decide</p>
-              <p>Choose one and explain the personality it gives the brand.</p>
+              <p class="undecided">Ruler</p>
+              <p>
+                Elegant, confident, and simple; poised without feeling formal.
+              </p>
             </div>
             <div>
               <h3>Visual direction</h3>
-              <p class="undecided">To decide</p>
+              <p class="undecided">Modernist</p>
               <p>
-                Compare approaches, then justify your choice for this audience.
+                Clean structure, neutral colors, and simple typography. The
+                annotated comparison remains project evidence.
               </p>
             </div>
           </div>
@@ -108,50 +103,50 @@
       >
         <div class="section-heading">
           <span class="section-number">01 / Logo</span>
-          <h2 id="logo-title">A placeholder<br />with a purpose.</h2>
+          <h2 id="logo-title">A wordmark<br />proposal.</h2>
           <p>
-            Replace after your decisions. The same SVG appears on the
-            storefront.
+            A one-color draft appears in the storefront header. Learner review
+            is still pending.
           </p>
         </div>
         <div class="guide-content">
           <div class="logo-board">
             <img
-              src="assets/wordmark.svg"
-              alt="Neutral starter wordmark"
+              src="assets/star-wordmark.svg"
+              alt="STAR wordmark proposal"
               width="350"
-              height="52"
+              height="65"
             />
           </div>
           <div class="logo-variants">
             <div class="logo-variant">
               <img
                 class="logo-small"
-                src="assets/wordmark.svg"
-                alt="Neutral starter wordmark at a small size"
-                width="110"
-                height="16"
+                src="assets/star-wordmark.svg"
+                alt="STAR wordmark proposal at navigation size"
+                width="260"
+                height="48"
               />
-              <p>Small-size preview · 110px wide</p>
+              <p>Navigation-size preview · 155px wide</p>
             </div>
             <div class="logo-variant">
               <img
                 class="logo-mono"
-                src="assets/wordmark.svg"
-                alt="Neutral starter wordmark in monochrome"
-                width="190"
-                height="28"
+                src="assets/star-wordmark.svg"
+                alt="STAR wordmark proposal in one color"
+                width="260"
+                height="48"
               />
               <p>Monochrome preview · one color</p>
             </div>
           </div>
           <p class="guide-note">
-            Check your replacement at the actual header size and in one color. A
-            simple original wordmark is enough; the same SVG may serve each
-            presentation if it works. This one-color preview uses transparent
-            artwork with a flat black treatment. Give it breathing room and a
-            useful text alternative. Keep the shared source at
-            <code>assets/wordmark.svg</code>.
+            This original SVG is a proposal, not an approved or
+            trademark-cleared logo. The same single-ink artwork is used at
+            navigation size and in the one-color sample. Review its silhouette,
+            readability, and contrast before treating it as final. Shared
+            source:
+            <code>assets/star-wordmark.svg</code>.
           </p>
         </div>
       </section>
@@ -165,8 +160,8 @@
           <span class="section-number">02 / Color</span>
           <h2 id="palette-title">Color has<br />a job to do.</h2>
           <p>
-            Neutral starter roles. The swatches and values come from the same
-            shared CSS tokens.
+            Neutral roles used by both the storefront and guide. Swatches and
+            values come from shared CSS tokens.
           </p>
         </div>
         <div class="guide-content">
@@ -176,7 +171,7 @@
                 class="color-swatch"
                 style="--swatch-color: var(--color-paper)"
               ></div>
-              <h3>Paper</h3>
+              <h3>White</h3>
               <code data-color-token="--color-paper">CSS token</code>
               <p>Page background</p>
             </article>
@@ -194,18 +189,18 @@
                 class="color-swatch"
                 style="--swatch-color: var(--color-accent)"
               ></div>
-              <h3>Accent</h3>
+              <h3>Light gray</h3>
               <code data-color-token="--color-accent">CSS token</code>
-              <p>Starter notice and emphasis</p>
+              <p>Quiet emphasis and hover states</p>
             </article>
             <article class="palette-card">
               <div
                 class="color-swatch"
                 style="--swatch-color: var(--color-soft)"
               ></div>
-              <h3>Soft</h3>
+              <h3>Surface</h3>
               <code data-color-token="--color-soft">CSS token</code>
-              <p>Image and example surfaces</p>
+              <p>Product image surface</p>
             </article>
             <article class="palette-card">
               <div
@@ -233,16 +228,14 @@
           <span class="section-number">03 / Typography</span>
           <h2 id="type-title">A clear<br />hierarchy.</h2>
           <p>
-            System fonts keep this starter self-contained. Replace
-            intentionally, with readable fallbacks.
+            Avenir Next with Helvetica Neue and sans-serif fallbacks is shared
+            by the storefront and guide.
           </p>
         </div>
         <div class="guide-content">
           <div class="type-specimen">
-            <span class="type-label"
-              >Display / shared display family / placeholder copy</span
-            >
-            <p class="type-display">Your message<br />starts here.</p>
+            <span class="type-label">Display / shared family</span>
+            <p class="type-display">Effortlessly Simple.</p>
           </div>
           <div class="type-specimen">
             <span class="type-label">Body / shared body family</span>
@@ -253,7 +246,7 @@
             </p>
           </div>
           <div class="type-specimen">
-            <span class="type-label">Label / system monospace</span>
+            <span class="type-label">Label / shared monospace</span>
             <p class="type-mono">One product. Deliberate choices.</p>
           </div>
         </div>
@@ -343,9 +336,9 @@
         <div class="guide-content">
           <div class="button-samples">
             <span class="button button-primary"
-              >Primary action <span aria-hidden="true">↗</span></span
+              >Explore the Collection <span aria-hidden="true">↗</span></span
             ><span class="button button-secondary"
-              >Secondary action <span aria-hidden="true">↗</span></span
+              >Choose a size <span aria-hidden="true">↗</span></span
             >
           </div>
           <p class="guide-note">
@@ -365,23 +358,23 @@
           <span class="section-number">06 / Voice</span>
           <h2 id="voice-title">Words are<br />design, too.</h2>
           <p>
-            Replace this neutral example after choosing your audience and
-            archetype.
+            Elegant, confident, and simple; sophisticated without unnecessary
+            formality or complexity.
           </p>
         </div>
         <div class="guide-content">
           <div class="voice-grid">
             <div>
-              <h3>Neutral interface example</h3>
-              <p class="voice-example">“Choose a size.”</p>
-              <p>Short, direct, and specific about the next action.</p>
+              <h3>Voice traits</h3>
+              <p class="voice-example">Elegant. Confident. Simple.</p>
+              <p>Clear language, without unnecessary formality.</p>
             </div>
             <div>
-              <h3>Your brand voice is still open</h3>
+              <h3>Sample line</h3>
               <p>
-                Decide how your brand should sound and show that with a short
-                sample. Use honest claims. Ethical persuasion helps people make
-                a choice without invented reviews, urgency, or authority.
+                Effortlessly Simple. Always Elegant. A timeless everyday
+                essential that brings simplicity and elegance to everyday
+                outfits.
               </p>
             </div>
           </div>
@@ -402,14 +395,9 @@
       </div>
     </main>
     <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
-        >Project README <span aria-hidden="true">↗</span></a
-      >
+      <p>STAR <span class="footer-separator"> / </span> Live style guide</p>
+      <p class="footer-tagline">Fictional product demo.</p>
+      <a href="index.html">Storefront</a>
     </footer>
   </body>
 </html>

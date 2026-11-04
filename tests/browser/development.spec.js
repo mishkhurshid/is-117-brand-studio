@@ -79,7 +79,7 @@ test("development refreshes saved HTML, CSS, JavaScript and assets; plain previe
       svg.replace("<svg ", '<svg width="123" height="123" '),
     );
     await expect(
-      page.locator('img[src="assets/white-shirt.svg"]'),
+      page.locator("#product-section img.shirt-image"),
     ).toHaveJSProperty("naturalWidth", 123);
 
     await expect(plain).toHaveTitle(originalTitle);

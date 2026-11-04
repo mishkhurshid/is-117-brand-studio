@@ -1,0 +1,586 @@
+:root {
+  color-scheme: light;
+
+  --ink: #17191c;
+  --muted: #5b6065;
+  --paper: #f5f2eb;
+  --line: #c9c4ba;
+  --red: #bd3b2b;
+  --blue: #23449a;
+  --yellow: #f0c83b;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+dl {
+  margin: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 5;
+  padding: 0.6rem 0.8rem;
+  transform: translateY(-160%);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.page-header,
+.direction-grid {
+  width: min(100% - 3rem, 1440px);
+  margin-inline: auto;
+}
+
+.page-header {
+  position: relative;
+  padding-block: 1.3rem 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.return-link,
+.page-kicker,
+.direction-index,
+.hero-kicker,
+.masthead-note,
+.stage-number,
+.shirt-stage figcaption,
+.annotation-label,
+.product-label {
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.return-link {
+  position: absolute;
+  top: 1.35rem;
+  right: 0;
+}
+
+.page-kicker {
+  color: var(--muted);
+}
+
+.page-header h1 {
+  max-width: 760px;
+  margin-top: 2rem;
+  font-family: "Bodoni 72", Didot, Georgia, serif;
+  font-size: 3.3rem;
+  font-weight: 500;
+  line-height: 1.04;
+}
+
+.page-intro {
+  max-width: 550px;
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+.direction-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  padding-block: 2rem 5rem;
+}
+
+.direction {
+  min-width: 0;
+}
+
+.direction-heading {
+  min-height: 100px;
+  padding-bottom: 0.9rem;
+}
+
+.direction-index {
+  color: var(--muted);
+}
+
+.direction-heading h2 {
+  margin-top: 0.15rem;
+  font-size: 1.65rem;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.direction-heading > p:last-child {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.hero {
+  position: relative;
+  min-height: 500px;
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+.hero-modernist {
+  border: 1px solid #b9b2a7;
+  background: #f0ede5;
+}
+
+.hero-masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid currentcolor;
+}
+
+.brand-name {
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.masthead-note {
+  font-size: 0.6rem;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.88fr);
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 414px;
+  padding-block: 1.1rem 0.75rem;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.hero-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.62rem;
+  line-height: 1.4;
+}
+
+.hero-modernist .hero-kicker::before {
+  width: 1.2rem;
+  height: 0.24rem;
+  background: var(--red);
+  content: "";
+}
+
+.hero-title {
+  max-width: 9ch;
+  margin-top: 1.15rem;
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 720;
+  line-height: 1.01;
+}
+
+.hero-support {
+  max-width: 31ch;
+  margin-top: 1rem;
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.hero-action {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  margin-top: 1.2rem;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.84rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.hero-modernist .hero-action {
+  border-color: var(--red);
+  background: var(--red);
+}
+
+.shirt-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  align-self: stretch;
+  min-height: 330px;
+  background: #dfdbd1;
+}
+
+.shirt-stage img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.stage-number {
+  position: absolute;
+  z-index: 2;
+  top: 0.7rem;
+  left: 0.7rem;
+  font-size: 0.62rem;
+}
+
+.shirt-stage figcaption {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  z-index: 2;
+  font-size: 0.54rem;
+}
+
+.hero-baseline {
+  height: 1px;
+  background: currentcolor;
+}
+
+.hero-postmodern {
+  background: var(--yellow);
+  color: #141622;
+}
+
+.hero-postmodern .hero-masthead {
+  border-bottom: 3px solid var(--blue);
+}
+
+.hero-postmodern .brand-name {
+  color: var(--blue);
+  font-family: "Bodoni 72", Didot, Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.hero-postmodern .hero-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 1rem;
+}
+
+.hero-postmodern .hero-copy {
+  padding: 0.7rem 0 0.7rem 0.4rem;
+}
+
+.hero-postmodern .hero-title {
+  max-width: 10ch;
+  font-family: "Bodoni 72", Didot, Georgia, serif;
+  font-size: 3.3rem;
+  font-weight: 650;
+  line-height: 0.98;
+}
+
+.hero-postmodern .hero-support {
+  font-size: 0.92rem;
+}
+
+.hero-postmodern .hero-action {
+  border-color: var(--blue);
+  background: var(--blue);
+}
+
+.hero-postmodern .shirt-stage {
+  background: var(--blue);
+}
+
+.hero-postmodern .shirt-stage::before,
+.hero-postmodern .shirt-stage::after {
+  position: absolute;
+  z-index: 0;
+  width: 130%;
+  height: 0.8rem;
+  background: #cf4a3a;
+  content: "";
+}
+
+.hero-postmodern .shirt-stage::before {
+  top: 22%;
+  left: -12%;
+  transform: rotate(-11deg);
+}
+
+.hero-postmodern .shirt-stage::after {
+  right: -17%;
+  bottom: 24%;
+  height: 0.45rem;
+  background: var(--yellow);
+  transform: rotate(-11deg);
+}
+
+.hero-postmodern .shirt-stage img {
+  z-index: 1;
+  width: 90%;
+  transform: rotate(2deg);
+}
+
+.hero-postmodern .stage-number,
+.hero-postmodern .shirt-stage figcaption {
+  color: var(--white);
+}
+
+.hero-postmodern .hero-baseline {
+  height: 4px;
+  background: var(--blue);
+}
+
+.annotations {
+  padding-block: 1.1rem 1.3rem;
+}
+
+.annotation-label,
+.product-label {
+  color: var(--muted);
+}
+
+.annotations > p:nth-child(2) {
+  margin-top: 0.35rem;
+  font-size: 0.88rem;
+}
+
+.annotation-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.annotation-list > div {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+}
+
+.annotation-list dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.annotation-list dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.product-destination {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid var(--line);
+  background: #fffefa;
+}
+
+.direction .product-destination > img {
+  width: 6rem;
+  height: 6.5rem;
+  object-fit: contain;
+  background: #e7e4dc;
+}
+
+.product-destination h3 {
+  margin-top: 0.2rem;
+  font-family: "Bodoni 72", Didot, Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.product-destination p:not(.product-label) {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.product-destination label {
+  display: block;
+  margin-top: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.product-destination select {
+  display: block;
+  width: min(100%, 12rem);
+  min-height: 42px;
+  margin-top: 0.25rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #77736d;
+  border-radius: 0;
+  background: var(--white);
+  color: var(--ink);
+}
+
+@media (width <= 980px) {
+  .return-link {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.85rem;
+  }
+
+  .direction-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 720px;
+  }
+
+  .direction-heading {
+    min-height: 0;
+    padding-bottom: 0.8rem;
+  }
+
+  .hero {
+    min-height: 460px;
+  }
+
+  .hero-layout {
+    min-height: 380px;
+  }
+}
+
+@media (width <= 560px) {
+  .page-header,
+  .direction-grid {
+    width: min(100% - 2rem, 720px);
+  }
+
+  .page-header {
+    padding-block: 1rem 1.5rem;
+  }
+
+  .return-link {
+    font-size: 0.68rem;
+  }
+
+  .page-header h1 {
+    max-width: 12ch;
+    margin-top: 2rem;
+    font-size: 2.55rem;
+  }
+
+  .direction-grid {
+    gap: 2.5rem;
+    padding-block: 1.4rem 3rem;
+  }
+
+  .direction-heading h2 {
+    font-size: 1.45rem;
+  }
+
+  .hero {
+    min-height: 0;
+    padding: 0.9rem;
+  }
+
+  .hero-layout,
+  .hero-postmodern .hero-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    min-height: 0;
+    padding-block: 1rem 0.75rem;
+  }
+
+  .hero-copy,
+  .hero-postmodern .hero-copy {
+    padding: 0.35rem 0;
+  }
+
+  .hero-title,
+  .hero-postmodern .hero-title {
+    max-width: 12ch;
+    margin-top: 0.8rem;
+    font-size: 2.8rem;
+  }
+
+  .hero-support {
+    max-width: 38ch;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-action {
+    margin-top: 0.9rem;
+  }
+
+  .shirt-stage {
+    min-height: 290px;
+  }
+
+  .shirt-stage img {
+    max-height: 300px;
+  }
+
+  .annotation-list > div {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .product-destination {
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    align-items: start;
+    gap: 0.75rem;
+    padding: 0.8rem;
+  }
+
+  .direction .product-destination > img {
+    width: 4.5rem;
+    height: 5.2rem;
+  }
+}
