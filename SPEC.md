@@ -88,6 +88,45 @@ Write a short result and link only evidence that exists. A passing browser check
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BRAND-001 | [Storefront](public/index.html), [live guide](public/styleguide.html), [STAR wordmark](public/assets/star-wordmark.svg), [comparison evidence](public/explorations/index.html), [preview styles](public/explorations/explorations.css) | [Issue #1](https://github.com/mishkhurshid/is-117-brand-studio/issues/1); branch `feature/brand-001` | `npm run check` passed: formatting, lint, 7 server tests, and 13 Chromium browser tests. Reciprocity test verifies the three styling ideas are present while the bag stays at 0. Consistency test selects Layered, asserts its matching suggestion appears, and confirms the bag remains at 0. Learner explains that this would catch a wrong suggestion or unintended bag addition. Agent inspected storefront, guide, and studio at 1440px and 375px; the learner separately reported the two earlier previews readable at desktop and narrow widths, described the current storefront as "very simple and easy readable," confirmed keyboard navigation felt straightforward, and said the narrow view's background/colors are simple/basic without too much spacing. Those are learner-reported impressions. |
 
+## T-shirt Research — November 9, 2026
+
+**Research status:** Initial desk research and design interpretation, not customer interviews or proof of sales. The competitor notes below describe broad merchandising approaches; specific page layouts, inventory, and prices can change. The links are sources to revisit during review.
+
+### Three clothing-site comparisons
+
+| Source / date reviewed | Observation / reference | What it suggests for STAR |
+| --- | --- | --- |
+| [UNIQLO](https://www.uniqlo.com/us/en/) — Nov. 9, 2026 | Everyday clothing is presented as practical, versatile wardrobe basics. This is a broad brand-positioning observation, not a verified claim about any one T-shirt. | Keep the STAR white tee easy to understand and show everyday outfit uses. |
+| [Everlane](https://www.everlane.com/) — Nov. 9, 2026 | The brand's restrained, contemporary presentation is a useful reference for straightforward product-focused design. Specific product claims were not independently verified. | Use clear typography and product-first imagery rather than cluttered promotional language. |
+| [COS](https://www.cos.com/en-us/) — Nov. 9, 2026 | Minimal, elevated fashion styling offers a contrasting reference to purely functional basics. This is a visual-positioning interpretation. | Give STAR a polished, elegant feel while keeping the page approachable for students. |
+
+### Two possible positions
+
+- **Position A — Everyday basic:** An easy white T-shirt for routine wear, with practical and casual styling. Advantage: immediately approachable. Risk: could feel interchangeable with many basics brands.
+- **Position B — Minimalist elegance (chosen):** A simple white T-shirt presented as a versatile, polished wardrobe piece. Advantage: fits STAR's existing elegant, confident, simple voice and modernist visual direction. Risk: may feel too formal or expensive for students if the wording is overly luxurious.
+
+**Choice:** Position B, with approachable language and styling ideas for everyday situations. This is a proposed brand position, not a validated market finding.
+
+### Two short persona hypotheses
+
+1. **Primary — college student / young adult (about 18–25):** Wants one easy top that can work for class, coffee, and going out; worries about whether it will look polished and fit their style. **Assumption:** outfit examples will help them judge versatility.
+2. **Secondary — early-career professional (about 23–30):** Wants a simple top that can be dressed up with a blazer or trousers; worries about whether it feels appropriate for a casual workday. **Assumption:** a polished styling example will help them picture that use.
+
+**Chosen audience:** College students and young adults 18–25. The professional persona remains a secondary hypothesis. Neither persona has been confirmed through interviews or analytics.
+
+### Look, character, and honest persuasion
+
+- **Look:** Modernist structure, generous whitespace, neutral colors, simple typography, and the existing one-color STAR wordmark.
+- **Character:** Ruler archetype expressed as elegant, confident, and simple — not exclusive or intimidating.
+- **Honest persuasion:** Offer free outfit ideas before asking visitors to select a size or add the demo item to a bag (reciprocity). Let visitors optionally choose Relaxed, Layered, or Polished to see a matching suggestion (commitment/consistency). Do not invent scarcity, customer reviews, sustainability credentials, materials, fit measurements, or checkout capability.
+- **Open question:** Do actual students find the polished styling appealing, or would they prefer more casual imagery? Ask a classmate to check whether the intended audience is obvious from the homepage.
+
+### Peer-review record
+
+- **Review given:** Reviewed Clara's Off Hours project and filed four specific GitHub issues: [#7](https://github.com/cf344/is117-brand-studio/issues/7), [#8](https://github.com/cf344/is117-brand-studio/issues/8), [#9](https://github.com/cf344/is117-brand-studio/issues/9), and [#10](https://github.com/cf344/is117-brand-studio/issues/10).
+- **Review received:** Awaiting Clara's feedback issues on STAR. Record each incoming issue, response (implement, investigate, defer, or decline), and any evidence of a change here once available.
+- **Current decision:** Keep the existing minimalist-elegant direction for now; revisit after peer feedback.
+
 ## Later
 
 No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perhaps a brand story, a supported fit guide, or richer demo-bag behavior. Agree its scope and add one new spec ID at that time.
