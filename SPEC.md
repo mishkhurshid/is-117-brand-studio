@@ -94,11 +94,15 @@ Write a short result and link only evidence that exists. A passing browser check
 
 ### Three clothing-site comparisons
 
-| Source / date reviewed | Observation / reference | What it suggests for STAR |
+**Method:** Desk review of three specific white/basic T-shirt product pages on November 9, 2026. Observations below refer to features shown on the linked pages at review time, not claims about STAR's own product. Prices and page details may change.
+
+| Source / review date | Specific observation | What it suggests for STAR |
 | --- | --- | --- |
-| [UNIQLO](https://www.uniqlo.com/us/en/) — Nov. 9, 2026 | Everyday clothing is presented as practical, versatile wardrobe basics. This is a broad brand-positioning observation, not a verified claim about any one T-shirt. | Keep the STAR white tee easy to understand and show everyday outfit uses. |
-| [Everlane](https://www.everlane.com/) — Nov. 9, 2026 | The brand's restrained, contemporary presentation is a useful reference for straightforward product-focused design. Specific product claims were not independently verified. | Use clear typography and product-first imagery rather than cluttered promotional language. |
-| [COS](https://www.cos.com/en-us/) — Nov. 9, 2026 | Minimal, elevated fashion styling offers a contrasting reference to purely functional basics. This is a visual-positioning interpretation. | Give STAR a polished, elegant feel while keeping the page approachable for students. |
+| [UNIQLO — Crew Neck T-Shirt](https://www.uniqlo.com/us/en/products/E424873-000/00?colorDisplayCode=31&nodeeplink=true&sizeDisplayCode=006), Nov. 9, 2026 | The product page shows selectable sizes, a size guide with body measurements, customer reviews, and styling photos with model heights and sizes. It also explains the shirt's fabric and fit. | Clear size information and real outfit examples help shoppers evaluate a basic tee. STAR already has a size selector and styling ideas; a verified size chart is a possible future improvement, but measurements must not be invented. |
+| [Everlane — The Box-Cut Tee in Essential Cotton](https://assets.everlane.com/products/f-t-ctn-orgn-box-wnt), Nov. 9, 2026 | The page names the cut, labels the fit as relaxed, includes a model's height and worn size, and offers a size guide that distinguishes relaxed from slim and oversized fits. The description focuses on the silhouette, including cropped length and short sleeves. | Even a simple tee benefits from concrete fit explanations. STAR should explain the intended styling clearly, but should not claim a specific cut or fabric until product specifications are established. |
+| [COS — Clean Cut T-Shirt, White](https://www.cos.com/en-us/women/womenswear/tshirts/regular/product/clean-cut-t-shirt-white-1325526001), Nov. 9, 2026 | The product page offers a size guide, specific garment details, and a styling suggestion pairing the white tee with tailored clothing or denim. It presents a basic item as something that can be dressed up or down. | STAR can use polished yet relatable outfit suggestions to support its minimalist-elegant positioning, while keeping the demo product's unverified materials and fit out of its claims. |
+
+**Comparison takeaway:** UNIQLO makes everyday purchasing decisions easier with sizing, reviews, and styling context; Everlane gives explicit fit-language; COS connects a plain white tee with more polished styling. STAR can combine easy navigation and styling inspiration now, while leaving detailed sizing and fabric claims for when reliable product data exists.
 
 ### Two possible positions
 
